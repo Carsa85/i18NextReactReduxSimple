@@ -1,0 +1,16 @@
+.btn {
+    @each $color, $value in $theme-colors {
+        &.btn-outline-#{$color} {
+            border: 2px solid $value;
+        }
+    }
+    &.btn-pill {
+        border-radius: 19px;
+        &.btn-lg {
+            border-radius: 24px;
+        }
+        &.btn-sm {
+            border-radius: 15px;
+        }
+    }
+}

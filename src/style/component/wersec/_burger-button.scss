@@ -1,0 +1,26 @@
+[class*="bred-menu"] {
+    cursor: pointer;
+    .bar1,
+    .bar2,
+    .bar3 {
+        border-radius: 2px;
+        width: 25px;
+        height: 3px;
+        margin: 2px 0;
+        transition: 0.4s;
+    }
+    &.active {
+        .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-3px, 6px);
+            transform: rotate(-45deg) translate(-3px, 6px);
+        }
+        .bar2 {
+            opacity: 0;
+        }
+
+        .bar3 {
+            -webkit-transform: rotate(45deg) translate(-3px, -8px);
+            transform: rotate(45deg) translate(-3px, -8px);
+        }
+    }
+}

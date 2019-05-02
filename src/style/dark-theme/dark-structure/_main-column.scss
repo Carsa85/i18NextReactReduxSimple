@@ -1,0 +1,7 @@
+.PageContainer {
+    > div {
+        > .container-fluid {
+            background: $gray-800;
+        }
+    }
+}

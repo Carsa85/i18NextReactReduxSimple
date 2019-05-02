@@ -1,0 +1,138 @@
+@import "./topbar";
+@import "./left-menu";
+@import "./main-column";
+@import "./right-menu";
+
+.app-content {
+    > .page-error {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        .card-error {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90vw;
+            max-width: 500px;
+            min-width: 300px;
+            height: 90%;
+            min-height: 300px;
+            max-height: 450px;
+            padding: 20px;
+            border-radius: 4px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            p {
+                display: flex;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    > .TopBar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 55px;
+        z-index: 1000;
+    }
+
+    > .LeftMenu {
+        position: fixed;
+        left: 0;
+        min-width: 200px;
+        width: 200px;
+        margin-left: -200px;
+        height: 100%;
+        z-index: 900;
+        overflow: auto;
+        padding: 20px 0px;
+        transition: all 400ms;
+        &.open {
+            margin-left: 0px;
+            transition: all 400ms;
+        }
+    }
+    > .RightMenu {
+        position: fixed;
+        right: 0;
+        min-width: 250px;
+        width: 200px;
+        margin-right: -250px;
+        height: 100%;
+        z-index: 900;
+        overflow: auto;
+        padding: 20px 0px;
+        transition: all 400ms;
+        &.open {
+            margin-right: 0px;
+            transition: all 400ms;
+        }
+    }
+    > .PageContainer {
+        width: 100%;
+        padding: 0px 0px 20px 0px;
+        height: 100%;
+        transition: all 400ms;
+        &.left-menu-open {
+            margin-left: 200px;
+            transition: all 400ms;
+        }
+        &.right-menu-open {
+            margin-right: 250px;
+            transition: all 400ms;
+        }
+    }
+
+    > .application-backdrop {
+        display: none;
+        opacity: 0.5;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 800;
+        top: 0;
+        left: 0;
+    }
+
+    @media screen and (max-width: map-get($container-max-widths, "xl")) {
+    }
+
+    @media screen and (max-width: map-get($container-max-widths, "lg")) {
+        > .application-backdrop {
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
+        > .PageContainer {
+            &.left-menu-open {
+                margin-left: 0px;
+                transition: all 400ms;
+            }
+            &.right-menu-open {
+                margin-right: 0px;
+                transition: all 400ms;
+            }
+        }
+    }
+
+    @media screen and (max-width: map-get($container-max-widths, "md")) {
+    }
+
+    @media screen and (max-width: map-get($container-max-widths, "sm")) {
+    }
+}

@@ -1,0 +1,85 @@
+.LeftMenu {
+    ul {
+        list-style: none;
+        padding: 0px 0px 55px 0px;
+        li {
+            padding: 0px;
+            a {
+                display: flex;
+                text-decoration: none;
+                padding: 15px 15px;
+            }
+            &.level {
+                border-right: 0px;
+                .list-item {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    a {
+                        flex-grow: 90;
+                        &:hover {
+                            border-right: 0px;
+                        }
+                    }
+                    div {
+                        flex-grow: 10;
+                        i {
+                            border-width: 0 2px 2px 0;
+                            display: inline-block;
+                            flex-grow: 20;
+                            width: 7px;
+                            height: 7px;
+                            &.right {
+                                transform: rotate(-45deg);
+                                -webkit-transform: rotate(-45deg);
+                                transition: all 300ms;
+                            }
+
+                            &.left {
+                                transform: rotate(135deg);
+                                -webkit-transform: rotate(135deg);
+                                transition: all 300ms;
+                            }
+
+                            &.up {
+                                transform: rotate(-135deg);
+                                -webkit-transform: rotate(-135deg);
+                                transition: all 300ms;
+                            }
+
+                            &.down {
+                                transform: rotate(45deg);
+                                -webkit-transform: rotate(45deg);
+                                transition: all 300ms;
+                            }
+                        }
+                    }
+                }
+                ul {
+                    display: none;
+                }
+                &.is-open {
+                    ul {
+                        padding: 0px;
+                        display: block;
+                        a {
+                            padding-left: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: map-get($container-max-widths, "lg")) {
+        position: fixed;
+        left: 0;
+        transition: all 400ms;
+        &.open {
+            margin-left: 0px;
+            transition: all 400ms;
+        }
+    }
+}

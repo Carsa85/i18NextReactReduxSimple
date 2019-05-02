@@ -1,0 +1,14 @@
+.PageContainer {
+    > div {
+        margin: 20px;
+        > .container-fluid {
+            min-height: calc(100vh - 95px);
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

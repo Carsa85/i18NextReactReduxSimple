@@ -1,0 +1,23 @@
+.dropdown-menu {
+    background-color: $gray-800 !important;
+    border-color: $black !important;
+    .dropdown-header {
+        color: $gray-400 !important;
+    }
+    .dropdown-item {
+        color: $gray-100 !important;
+        &:hover {
+            background: $gray-950 !important;
+        }
+        &.disabled {
+            color: $gray-400 !important;
+        }
+        a {
+            color: inherit !important;
+            &.is-active {
+                color: $primary !important;
+                background: $gray-950 !important;
+            }
+        }
+    }
+}

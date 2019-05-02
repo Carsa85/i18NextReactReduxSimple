@@ -1,0 +1,25 @@
+.RightMenu {
+    ul {
+        list-style: none;
+        padding: 0px 0px 55px 0px;
+
+        li {
+            padding: 0px;
+
+            a {
+                display: flex;
+                text-decoration: none;
+                padding: 15px 15px;
+            }
+        }
+    }
+    @media screen and (max-width: map-get($container-max-widths, "lg")) {
+        position: fixed;
+        right: 0;
+        transition: all 400ms;
+        &.open {
+            margin-right: 0px;
+            transition: all 400ms;
+        }
+    }
+}

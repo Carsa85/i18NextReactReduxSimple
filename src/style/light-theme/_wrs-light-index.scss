@@ -1,0 +1,36 @@
+@import "./variables";
+@import "./light-component/index.component";
+@import "./light-structure/main-structure";
+
+body {
+    background: $gray-100 !important;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: $gray-200;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: $gray-200;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from($gray-400),
+        to($gray-200)
+    );
+    background-image: -webkit-linear-gradient(
+        left,
+        $gray-400 0%,
+        $gray-200 100%
+    );
+    background-image: linear-gradient(to right, $gray-400 0%, $gray-200 100%);
+}

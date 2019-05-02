@@ -1,0 +1,33 @@
+.LeftMenu {
+    ul {
+        li {
+            a {
+                color: $gray-100;
+                &.is-active {
+                    background-color: $primary;
+                    &:hover {
+                        border-right: 4px solid $gray-100;
+                    }
+                }
+                &:hover {
+                    border-right: 4px solid $primary;
+                }
+            }
+            &.level {
+                .list-item {
+                    a {
+                        color: $gray-100;
+                    }
+                    div {
+                        i {
+                            border: solid $gray-600;
+                        }
+                    }
+                }
+                &.is-open {
+                    background-color: $gray-950;
+                }
+            }
+        }
+    }
+}

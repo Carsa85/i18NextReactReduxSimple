@@ -1,0 +1,34 @@
+@import "./topbar";
+@import "./left-menu";
+@import "./main-column";
+@import "./right-menu";
+
+.app-content {
+    > .page-error {
+        .card-error {
+            background: $gray-800;
+            box-shadow: 2px 2px 2px $black;
+        }
+    }
+
+    > .TopBar {
+        background: $gray-800;
+        box-shadow: 2px 0px 3px $black;
+    }
+
+    > .LeftMenu {
+        background: $gray-800;
+        box-shadow: 0px 2px 3px $black;
+    }
+    > .RightMenu {
+        background: $gray-800;
+        border-left: 1px solid $black;
+    }
+    > .PageContainer {
+        background: $gray-900;
+    }
+
+    > .application-backdrop {
+        background: $gray-600;
+    }
+}

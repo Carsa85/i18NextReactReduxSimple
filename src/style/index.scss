@@ -1,0 +1,33 @@
+@import "./light-theme/wrs-light-index";
+//@import "./dark-theme/wrs-dark-index";
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "./component/index.component";
+@import "./structure/main-structure";
+
+html {
+    height: 100vh;
+    overflow: auto;
+    body {
+        height: 100%;
+        #root {
+            height: 100%;
+        }
+        .App {
+            height: 100%;
+            .app-content {
+                padding-top: 55px;
+                height: 100%;
+                display: flex;
+                img {
+                    &.spinner-border {
+                        border: 0px;
+                        margin: 50px;
+                        height: 100%;
+                        width: 35vw;
+                        animation: spinner-border 30s linear infinite;
+                    }
+                }
+            }
+        }
+    }
+}

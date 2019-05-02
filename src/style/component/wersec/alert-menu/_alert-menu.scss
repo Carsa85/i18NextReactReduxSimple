@@ -1,0 +1,49 @@
+@import "./alert-item";
+
+.AlertMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    .dropdown {
+        > button {
+            padding: 0px;
+            height: 55px;
+            width: 40px;
+            padding: 4px;
+            background-color: transparent;
+            border-color: transparent;
+            border: 0px;
+            font-size: 1.5em;
+            .badge {
+                font-size: 0.4em;
+                position: absolute;
+                left: 20px;
+                top: 10px;
+            }
+            &:focus {
+                box-shadow: none;
+                border: 0px;
+            }
+            &:hover {
+                background-color: transparent;
+                border-color: transparent;
+                border: 0px;
+            }
+            &:active {
+                background-color: transparent !important;
+                border-color: transparent !important;
+                box-shadow: none !important;
+                border: 0px;
+            }
+        }
+    }
+    .dropdown-menu {
+        &.show {
+            .dropdown-link {
+                padding: 0px;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.AlertItem {
+    border-bottom: 1px solid $gray-950;
+    .item-left {
+        color: $info;
+        .avatar {
+            border: 2px solid $gray-100;
+        }
+    }
+    .item-center {
+        .item-sender-detail {
+            .sender {
+                color: $info;
+                font-style: italic;
+            }
+            .date {
+                color: $info;
+                font-style: italic;
+            }
+        }
+        .item-title {
+            color: $gray-100;
+        }
+        .item-description {
+            color: $gray-200;
+            font-style: italic;
+        }
+    }
+}

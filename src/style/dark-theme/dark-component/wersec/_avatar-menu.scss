@@ -1,0 +1,11 @@
+.AvatarMenu {
+    height: 100%;
+    .dropdown {
+        > button {
+            img {
+                border: 3px solid $gray-100;
+                border-radius: 50%;
+            }
+        }
+    }
+}

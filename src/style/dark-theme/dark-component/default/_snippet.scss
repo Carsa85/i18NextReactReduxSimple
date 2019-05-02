@@ -1,0 +1,24 @@
+pre {
+    background: $gray-900;
+    border: 1px solid $gray-950;
+    code {
+        div {
+            color: $gray-200;
+            span {
+                &.nt {
+                    color: $green;
+                }
+                &.s {
+                    color: $orange;
+                }
+                &.na {
+                    color: $ligh-blue;
+                }
+                &.imp {
+                    color: $indigo;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,19 @@
+@import "./alert-item";
+
+.AlertMenu {
+    .dropdown {
+        > button {
+            color: $gray-400;
+
+            &:focus {
+                color: $gray-400 !important;
+            }
+            &:hover {
+                color: $gray-400 !important;
+            }
+            &:active {
+                color: $gray-400 !important;
+            }
+        }
+    }
+}

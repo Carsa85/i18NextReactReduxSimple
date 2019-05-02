@@ -1,0 +1,31 @@
+pre {
+    width: 100%;
+    margin: 20px 0px;
+    white-space: pre-line;
+    border-radius: 4px;
+    code {
+        width: 100%;
+        div {
+            width: 100%;
+            padding: 20px;
+            span {
+                &.nt {
+                    font-weight: normal;
+                    font-style: normal;
+                }
+                &.s {
+                    font-weight: normal;
+                    font-style: italic;
+                }
+                &.na {
+                    font-weight: bold;
+                    font-style: normal;
+                }
+                &.imp {
+                    font-weight: bold;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}

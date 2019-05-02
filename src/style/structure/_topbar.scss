@@ -1,0 +1,89 @@
+.TopBar {
+    flex-direction: row;
+    .left {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        min-width: 200px;
+        .brand {
+            height: 100%;
+            display: flex;
+            width: 145px;
+            padding: 10px 5px;
+            img {
+                height: 100%;
+                display: inline-block;
+            }
+        }
+        @media screen and (max-width: map-get($container-max-widths, "lg")) {
+            width: 55px;
+            min-width: 55px;
+            .brand {
+                display: none;
+            }
+        }
+    }
+
+    .center {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .brand {
+            display: none;
+        }
+        @media screen and (max-width: map-get($container-max-widths, "lg")) {
+            .brand {
+                height: 100%;
+                display: flex;
+                width: 145px;
+                padding: 10px 5px;
+                img {
+                    height: 100%;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .right {
+        display: flex;
+        flex-direction: row;
+        width: 250px;
+        min-width: 250px;
+        justify-content: flex-end;
+        align-items: center;
+        .Toolbar {
+            display: flex;
+            flex-direction: row;
+            width: 140px;
+            min-width: 140px;
+            justify-content: flex-end;
+            align-items: center;
+            .AlertMenu {
+                height: 100%;
+            }
+        }
+        .AvatarMenu {
+            height: 100%;
+        }
+
+        @media screen and (max-width: map-get($container-max-widths, "lg")) {
+            width: 110px;
+            min-width: 110px;
+            .Toolbar {
+                display: none;
+            }
+        }
+    }
+    [class*="bred-menu"] {
+        display: inline-block;
+        width: 55px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

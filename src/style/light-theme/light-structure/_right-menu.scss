@@ -1,0 +1,25 @@
+.RightMenu {
+    ul {
+        li {
+            a {
+                @each $color, $value in $theme-colors {
+                    &.#{$color} {
+                        color: $gray-800;
+                        &.#{$color} {
+                            &.is-active {
+                                background: $gray-100;
+                                color: $value;
+                                font-weight: bold;
+                            }
+                            &:hover {
+                                color: $value;
+                                font-weight: bold;
+                            }
+                            border-left: 4px solid $value;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

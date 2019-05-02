@@ -1,0 +1,51 @@
+.AlertItem {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    .item-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 60px;
+        padding: 5px;
+        .avatar {
+            height: 48px;
+            width: 48px;
+            border-radius: 50%;
+        }
+    }
+    .item-center {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 100;
+        max-width: 250px;
+        padding: 5px;
+        .item-sender-detail {
+            .sender {
+                font-size: 0.7rem;
+            }
+            .date {
+                font-size: 0.7rem;
+            }
+        }
+        .item-title {
+            font-weight: bold;
+            .badge {
+                position: absolute;
+                right: 5px;
+            }
+        }
+        .item-description {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 180px;
+        }
+        .item-progress {
+            .progress {
+                height: 3px;
+            }
+        }
+    }
+}
