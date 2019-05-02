@@ -14,11 +14,15 @@ interface MyState {
 
 class Settings extends Component<MyProps, MyState> {
 
-    constructor (props: MyProps) {
+    constructor(props: MyProps) {
         super(props)
         this.state = {
             language: this.props.i18n.language
         }
+    }
+
+    openModalInfo(isOpen: boolean, title: string, message: string) {
+        this.props.openModal(isOpen, title, message)
     }
 
     setLanguage = (language: string) => {
@@ -87,14 +91,31 @@ class Settings extends Component<MyProps, MyState> {
                                 </FormGroup>
                             </Form>
                         </Col>
-                        <Col xs="12" className="d-flex justify-content-center">
-                            <Button
-                                onClick={() =>
-                                    this.changeLanguage(this.state.language)
-                                }
-                            >
-                                Applica
-                            </Button>
+                        <Col xs="6" className="d-flex justify-content-center">
+                            <p>
+                                <Button
+                                    onClick={() =>
+                                        this.changeLanguage(this.state.language)
+                                    }
+                                >
+                                    {this.props.t(
+                                        "PageContainer.Settings.Button.Apply"
+                                    )}
+
+                                </Button>
+                            </p>
+
+                        </Col>
+                        <Col xs="6" className="d-flex justify-content-center">
+
+                            <p>
+                                <Button
+                                    onClick={() =>
+                                        this.openModalInfo(true, this.props.t("Modal.Info.Title"), this.props.t("Modal.Info.Message")
+                                        )} color="success">
+                                    {this.props.t("PageContainer.Settings.Button.OpenModal")}
+                                </Button>
+                            </p>
                         </Col>
                     </Row>
                 </Container>

@@ -1,44 +1,41 @@
 {
-  "App": {
-    "Message": {
-      "General": {
-        "ServerError": {
-          "Title": "Errore server"
-        }
-      },
-      "GloballSettingsError": {
-        "Title": "Impostazioni non trovati",
-        "Message": "Impossibile recuperare le informazioni generali dell'applicazione"
-      }
-    }
-  },
   "Modal": {
     "Info": {
+      "Title": "Titolo modale",
+      "Message": "Messaggio della modale italiana",
       "Button": {
         "Close": "chiudi"
       }
     }
   },
-  "LeftMenu": {
-    "Home": "Riepilogo"
-  },
   "TopBar": {
     "AvatarMenu": {
-      "Logout": "Esci",
-      "Settings": "Impostazioni"
+      "Avatar": {
+        "Title": "Avatar title es:(userEmail@qualsiasicosa.com)"
+      },
+      "Dropdown": {
+        "Header": "Il mio nome",
+        "Logout": "Esci",
+        "Settings": "Impostazioni"
+      }
     }
   },
   "PageContainer": {
     "Dashboard": {
-      "Title": "Riepilogo portale amministrativo"
+      "Title": "esempio con libreria I18next",
+      "Button":{
+        "OpenModal": "Apri modale"
+      }
     },
     "Settings": {
       "Title": "Impostazioni",
       "Button": {
         "ChangeLanguage": {
-          "IT": "Cambia in IT",
-          "EN": "Cambia in EN"
-        }
+          "IT": "Cambia a IT",
+          "EN": "Cambia a EN"
+        },
+        "Apply": "Applica",
+        "OpenModal": "Apri modale"
       }
     }
   }

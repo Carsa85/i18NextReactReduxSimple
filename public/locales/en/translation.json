@@ -1,46 +1,31 @@
 {
-  "App": {
-    "PageError": {
-      "InvalidSettings": {
-        "Title": "No settings",
-        "Message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit dolor, posuere et placerat vel, lobortis quis urna. Nullam sollicitudin tempus dolor et dapibus. Maecenas at est quis metus mattis aliquet. Vestibulum dui arcu, volutpat id risus id, eleifend fringilla ligula. Proin cursus eget neque a dapibus. Ut sed est vel mauris ultricies fringilla id sed nunc. Maecenas pharetra nisi quis malesuada efficitur. Ut interdum non ipsum non facilisis. Phasellus mattis diam eu arcu vulputate, sed bibendum sapien cursus. Quisque at vulputate neque."
-      },
-      "InvalidSession": {
-        "Title": "Invalid session",
-        "Message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit dolor, posuere et placerat vel, lobortis quis urna. Nullam sollicitudin tempus dolor et dapibus. Maecenas at est quis metus mattis aliquet. Vestibulum dui arcu, volutpat id risus id, eleifend fringilla ligula. Proin cursus eget neque a dapibus. Ut sed est vel mauris ultricies fringilla id sed nunc. Maecenas pharetra nisi quis malesuada efficitur. Ut interdum non ipsum non facilisis. Phasellus mattis diam eu arcu vulputate, sed bibendum sapien cursus. Quisque at vulputate neque."
-      }
-    },
-    "Message": {
-      "General": {
-        "ServerError": {
-          "Title": "Server error"
-        }
-      },
-      "GloballSettingsError": {
-        "Title": "Missing settings",
-        "Message": "Immpossible to retrive the configurations"
-      }
-    }
-  },
   "Modal": {
     "Info": {
+      "Title": "Modal title",
+      "Message": "Modal English message",
       "Button": {
         "Close": "close"
       }
     }
   },
-  "LeftMenu": {
-    "Home": "Dashboard"
-  },
   "TopBar": {
     "AvatarMenu": {
-      "Logout": "Exit",
-      "Settings": "Settings"
+      "Avatar": {
+        "Title": "Avatar title ex:(userEmail@whatever.com)"
+      },
+      "Dropdown": {
+        "Header": "My name",
+        "Logout": "Exit",
+        "Settings": "Settings"
+      }
     }
   },
   "PageContainer": {
     "Dashboard": {
-      "Title": "Admin Portal Dashboard"
+      "Title": "example with I18next library",
+      "Button": {
+        "OpenModal": "Open modal"
+      }
     },
     "Settings": {
       "Title": "Settings",
@@ -48,7 +33,9 @@
         "ChangeLanguage": {
           "IT": "Change to IT",
           "EN": "Change to EN"
-        }
+        },
+        "Apply": "Apply",
+        "OpenModal": "Apri modale"
       }
     }
   }

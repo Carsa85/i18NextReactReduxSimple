@@ -37,12 +37,12 @@ class AvatarMenu extends Component<MyProps, MyState> {
                     <DropdownToggle>
                         <img
                             src={this.props.AvatarDefault}
-                            title={this.props.t("TopBar.AvatarMenu.Title")}
+                            title={this.props.t("TopBar.AvatarMenu.Avatar.Title")}
                         />
                     </DropdownToggle>
                     <DropdownMenu>
                         <DropdownItem header>
-                        {this.props.t("TopBar.AvatarMenu.Header")}
+                        {this.props.t("TopBar.AvatarMenu.Dropdown.Header")}
                         </DropdownItem>
                         <DropdownItem>
                             <NavLink
@@ -51,7 +51,7 @@ class AvatarMenu extends Component<MyProps, MyState> {
                                 className="dropdown-link"
                                 activeClassName="is-active"
                             >
-                                {this.props.t("TopBar.AvatarMenu.Settings")}
+                                {this.props.t("TopBar.AvatarMenu.Dropdown.Settings")}
                             </NavLink>
                         </DropdownItem>
                         <DropdownItem divider />
@@ -62,7 +62,7 @@ class AvatarMenu extends Component<MyProps, MyState> {
                                 className="dropdown-link"
                                 activeClassName="is-active"
                             >
-                                {this.props.t("TopBar.AvatarMenu.Logout")}
+                                {this.props.t("TopBar.AvatarMenu.Dropdown.Logout")}
                             </NavLink>
                         </DropdownItem>
                     </DropdownMenu>

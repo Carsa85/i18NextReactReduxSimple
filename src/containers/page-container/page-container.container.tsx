@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, RouteComponentProps } from "react-router-dom";
 
-import Dashboard from "./components/dashboard/dashboard.component";
+import Dashboard from "./components/dashboard/dashboard.connector";
 import Settings from "./components/settings/settings.connector";
 
 interface MyProps extends RouteComponentProps {}
